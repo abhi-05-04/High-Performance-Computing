@@ -1,0 +1,2 @@
+mpicc hellompi.c -o hello
+mpirun -np 5 ./hello

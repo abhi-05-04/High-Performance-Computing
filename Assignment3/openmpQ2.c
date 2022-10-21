@@ -8,7 +8,7 @@ int main()
 {
 	int tid, nthreads, i, j;
 	int a[N][N], b[N][N], c[N][N];
-	omp_set_num_threads(8); // number of threads
+	omp_set_num_threads(2); // number of threads
 	
 
 	for (i = 0; i < N; i++)

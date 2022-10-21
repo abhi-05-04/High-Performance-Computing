@@ -24,7 +24,7 @@ int fib(int n)
 int main ()
 {
 	int n = 15;
-	#pragma omp parallel shared(n)
+	// #pragma omp parallel shared(n)
 	{
 		#pragma omp single
 		printf("%d\n", fib(n));

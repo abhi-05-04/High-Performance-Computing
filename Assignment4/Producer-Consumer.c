@@ -15,7 +15,7 @@ int empty = 10, x = 0;
 // add it to the buffer
 void producer()
 {
-    #pragma omp critical(task)
+    #pragma omp 
     {
         // Decrease mutex value by 1
         --mutex;
@@ -39,7 +39,7 @@ void producer()
 // remove it from buffer
 void consumer()
 {
-    #pragma omp critical(task)
+    #pragma omp 
     {
         // Decrease mutex value by 1
         --mutex;
@@ -72,7 +72,7 @@ int main()
 // executed by only one thread at a
 // time i.e., only one thread enters
 // the critical section at a given time
-#pragma omp critical
+#pragma omp 
     for (i = 1; i > 0; i++)
     {
         printf("\nEnter your choice:");

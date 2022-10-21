@@ -1,0 +1,4 @@
+gcc -g -pg -o output -fopemp <code name>
+./output
+gprof -l output >gprof.out
+gprof output
